@@ -1,0 +1,31 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.menu, .juegos {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    color: #f5a623;
+}
+
+a {
+    color: #00ffcc;
+    text-decoration: none;
+}
