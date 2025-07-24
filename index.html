@@ -2,32 +2,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Buenos Aires VIP Cripto</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>BUENOS AIRES VIP - Cripto</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Buenos Aires VIP</h1>
-        <p>Pagá con NICAPAY, BTC o USDT</p>
-    </header>
-    <main>
-        <section class="menu">
-            <h2>Menú del Bar</h2>
-            <p>(Aquí irá la foto del menú real que nos mandaste)</p>
-        </section>
-        <section class="juegos">
-            <h2>Juegos Cripto</h2>
-            <ul>
-                <li><a href="#">Plinko</a></li>
-                <li><a href="#">Crash</a></li>
-                <li><a href="#">Cartas</a></li>
-                <li><a href="#">Ruleta</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Buenos Aires VIP Cripto</p>
-    </footer>
+  <div class="container">
+    <h1>🍸 BUENOS AIRES VIP</h1>
+    <p>Pagá con NICAPAY, BTC o USDT</p>
+
+    <div class="buttons">
+      <button onclick="simularPago('NICAPAY')" class="btn nicapay">🪙 Pagar con NICAPAY</button>
+      <button onclick="simularPago('BTC')" class="btn btc">₿ Pagar con BTC</button>
+      <button onclick="simularPago('USDT')" class="btn usdt">💵 Pagar con USDT</button>
+    </div>
+
+    <div id="mensaje" class="mensaje"></div>
+  </div>
+
+  <script>
+    function simularPago(moneda) {
+      const msg = `✅ ¡Gracias por tu pago simulado con ${moneda}!`;
+      document.getElementById("mensaje").innerText = msg;
+    }
+  </script>
 </body>
 </html>
