@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buenos Aires VIP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo-nicapay.png" alt="Logo NICAPAY" class="logo" />
+    <h1>🍸 BUENOS AIRES VIP</h1>
+    <p>Pagá con NICAPAY, BTC o USDT</p>
+  </header>
+
+  <main>
+    <section class="pagos">
+      <button onclick="simularPago('NICAPAY')">◾ Pagar con NICAPAY</button>
+      <button onclick="simularPago('BTC')">₿ Pagar con BTC</button>
+      <button onclick="simularPago('USDT')">💵 Pagar con USDT</button>
+      <p id="mensajePago"></p>
+    </section>
+
+    <section class="menu-bar">
+      <h2>📸 Menú del Bar</h2>
+      <img src="menu-bar.png" alt="Menú del bar" class="menu-img">
+      <h3>🍽️ Platos Especiales</h3>
+      <ul>
+        <li>🥩 Churrasco Especial</li>
+        <li>🍖 Costillas VIP</li>
+        <li>🥘 Steak a la parrilla</li>
+      </ul>
+      <h3>🥤 Bebidas</h3>
+      <ul>
+        <li>🥤 Coca-Cola</li>
+        <li>🍹 Refrescos Naturales</li>
+      </ul>
+    </section>
+
+    <section class="local">
+      <h2>📷 Nuestro Local</h2>
+      <img src="local1.png" alt="Interior del bar" class="menu-img">
+      <img src="local2.png" alt="Zona de mesas" class="menu-img">
+    </section>
+
+    <section class="juegos">
+      <h2>🎰 Juegos Cripto</h2>
+      <ul>
+        <li><a href="#">🎯 Plinko</a></li>
+        <li><a href="#">📉 Crash</a></li>
+        <li><a href="#">🃏 Cartas</a></li>
+        <li><a href="#">🎡 Ruleta</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Buenos Aires VIP Cripto</p>
+  </footer>
+
+  <script>
+    function simularPago(metodo) {
+      document.getElementById('mensajePago').innerHTML = `✅ ¡Gracias por tu pago simulado con ${metodo}!`;
+    }
+  </script>
+</body>
+</html>
