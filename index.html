@@ -2,29 +2,25 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>BUENOS AIRES VIP - Cripto</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buenos Aires VIP</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
+    <img src="logo-nicapay.png" alt="NICAPAY Logo" class="logo" />
     <h1>🍸 BUENOS AIRES VIP</h1>
     <p>Pagá con NICAPAY, BTC o USDT</p>
+    <a class="btn orange" href="?pago=nicapay">
+      <img src="logo-nicapay.png" class="icon" /> Pagar con NICAPAY
+    </a>
+    <a class="btn orange" href="?pago=btc">₿ Pagar con BTC</a>
+    <a class="btn green" href="?pago=usdt">💵 Pagar con USDT</a>
 
-    <div class="buttons">
-      <button onclick="simularPago('NICAPAY')" class="btn nicapay">🪙 Pagar con NICAPAY</button>
-      <button onclick="simularPago('BTC')" class="btn btc">₿ Pagar con BTC</button>
-      <button onclick="simularPago('USDT')" class="btn usdt">💵 Pagar con USDT</button>
+    <div class="mensaje">
+      ✅ ¡Gracias por tu pago simulado con USDT!
     </div>
-
-    <div id="mensaje" class="mensaje"></div>
   </div>
-
-  <script>
-    function simularPago(moneda) {
-      const msg = `✅ ¡Gracias por tu pago simulado con ${moneda}!`;
-      document.getElementById("mensaje").innerText = msg;
-    }
-  </script>
 </body>
 </html>
